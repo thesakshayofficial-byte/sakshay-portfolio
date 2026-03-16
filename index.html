@@ -1,0 +1,133 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DHARMENDRA Studio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  
+  <!-- BANNER -->
+ <section class="banner">
+
+<h1 class="studio-title">
+  DHARMENDRA 
+  <span class="sub-text"> Studio </span>
+</h1>
+
+<video class="banner-video" autoplay muted loop playsinline>
+  <source src="banner-video.mp4" type="video/mp4">
+</video>
+
+<button id="bookSessionBtn">Book Session</button>
+
+</section> 
+<!-- ABOUT -->
+<section class="about-section">
+
+  <!-- ABOUT -->
+  <section class="about-section">
+    <h2>About Our Photography Studio</h2>
+    <div class="about-content">
+      <p>
+        DHARMENDRA Studio captures your precious moments and keeps them alive forever.
+        We specialize in wedding, pre-wedding, portrait and event photography.
+        Quality, creativity and customer satisfaction are our hallmarks.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="about-services" id="services">
+    <h2>Signature Services</h2>
+
+    <div class="service-item" data-aos="zoom-in-up">
+      <img src="pre-wedding image.png" class="service-image" alt="">
+      <p>Pre Wedding Photography</p>
+      <button class="book-btn" data-service="pre-wedding">Book Now</button>
+    </div>
+
+    <div class="service-item" data-aos="zoom-in-up">
+      <img src="full-wedding image.png" class="service-image" alt="">
+      <p>Full Wedding Photography</p>
+      <button class="book-btn" data-service="full-wedding">Book Now</button>
+    </div>
+
+    <div class="service-item" data-aos="zoom-in-up">
+      <img src="event-photography image.png" class="service-image" alt="">
+      <p>Event Coverage Photography</p>
+      <button class="book-btn" data-service="event-photography">Book Now</button>
+    </div>
+
+    <div class="service-item" data-aos="zoom-in-up">
+      <img src="candid-photography image.png" class="service-image" alt="">
+      <p>Candid Photography</p>
+      <button class="book-btn" data-service="candid-photography">Book Now</button>
+    </div>
+
+    <div class="service-item" data-aos="zoom-in-up">
+      <img src="fashion-photography image.png" class="service-image" alt="">
+      <p>Fashion Photography</p>
+      <button class="book-btn" data-service="fashion-photography">Book Now</button>
+    </div>
+
+    <div class="service-item" data-aos="zoom-in-up">
+      <img src="real estate and product photography.png" class="service-image" alt="">
+      <p>Real Estate & Product Photography</p>
+      <button class="book-btn" data-service="real estate & product photography">
+        Book Now
+      </button>
+    </div>
+
+  </section>
+
+  <!-- MODAL -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <h3 id="modalPrice"></h3>
+
+      <button id="confirmBooking">Confirm Booking</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <hr>
+    <h3>DHARMENDRA Studio</h3>
+    <p>Capturing moments, creating memories.</p>
+
+    <p>📞 Phone: 9811337216</p>
+    <p>📧 Email: dharmender.9329@gmail.com</p>
+    <p>📍 Location: Delhi, India</p>
+
+    <p>© 2026 DHARMENDRA Studio. All rights reserved.</p>
+  </footer>
+
+  <!-- JS FILE -->
+  <script src="script.js"></script>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html> "
