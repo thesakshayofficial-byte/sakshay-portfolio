@@ -286,38 +286,12 @@ footer p {
   letter-spacing:1px;
 }
 
-/* ================= MOBILE LOGO ================= */
-
-.mobile-logo{
-  position:absolute;
-  top:25px;
-  left:20px;
-
-  font-size:22px;
-  font-weight:bold;
-  letter-spacing:2px;
-
-  color:rgb(243,205,109);
-
-  border:2px solid rgb(243,205,109);
-  padding:4px 10px;
-  border-radius:6px;
-
-  display:none;
-
-  box-shadow:0 0 10px rgba(243,205,109,0.6);
-}
-
-/* MOBILE VIEW */
+/* ================= MOBILE VIEW ================= */
 
 @media (max-width:600px){
 
   .studio-title{
     display:none;
-  }
-
-  .mobile-logo{
-    display:block;
   }
 
 }
