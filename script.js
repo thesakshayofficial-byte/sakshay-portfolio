@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       price: "₹18,000",
       desc: "Professional fashion shoot with lighting setup."
     },
-    "real estate & product photography": {
+    "real-estate-product-photography": {
       name: "Real Estate & Product Photography",
       price: "₹8,000",
       desc: "High quality interior and property photography."
