@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const servicesData = {
     "pre-wedding": {
       name: "Pre Wedding Photography",
-      price: "₹20,000",
+      price: "₹18,000",
       desc: "Romantic outdoor shoot with cinematic poses and edited album."
     },
     "full-wedding": {
       name: "Full Wedding Photography",
-      price: "₹60,000",
+      price: "₹45,000",
       desc: "Complete wedding coverage including haldi, mehendi, wedding and reception."
     },
     "event-photography": {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       price: "₹18,000",
       desc: "Professional fashion shoot with lighting setup."
     },
-    "real-estate-product-photography": {
+    "real estate & product photography": {
       name: "Real Estate & Product Photography",
       price: "₹8,000",
       desc: "High quality interior and property photography."
