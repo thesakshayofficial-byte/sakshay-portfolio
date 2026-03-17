@@ -1,4 +1,4 @@
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
   // ==============================
   // SERVICE DATA
@@ -80,7 +80,7 @@
   };
 
   // ==============================
-  // CONFIRM BOOKING → GMAIL
+  // CONFIRM BOOKING → EMAIL
   // ==============================
   confirmBtn.onclick = function () {
 
@@ -104,13 +104,10 @@ Thank you.`;
 
     const email = "dharmender.9329@gmail.com";
 
-    const gmailURL =
-      `https://mail.google.com/mail/?view=cm&fs=1` +
-      `&to=${email}` +
-      `&su=${encodeURIComponent(subject)}` +
-      `&body=${encodeURIComponent(body)}`;
+    const mailURL =
+      `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    window.open(gmailURL, "_blank");
+    window.location.href = mailURL;
   };
 
   // ==============================
@@ -129,4 +126,4 @@ Thank you.`;
     });
   }
 
-}); 
+});
