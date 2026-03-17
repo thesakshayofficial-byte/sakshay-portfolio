@@ -1,4 +1,4 @@
- /* ================= GLOBAL RESET ================= */
+/* ================= GLOBAL RESET ================= */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -233,24 +233,25 @@ footer p {
   }
 
   .studio-title{
-    font-size:20px;
     left:20px;
     top:20px;
   }
 }
 
-/* Studio Title On Banner */
+/* ================= STUDIO TITLE ================= */
 
 .studio-title{
   position:absolute;
   top:30px;
   left:40px;
 
-  font-size:28px;
-  letter-spacing:2px;
-
+  font-size:clamp(20px,4vw,34px);
+  letter-spacing:3px;
   color:white;
   font-weight:600;
+
+  line-height:1.2;
+  text-shadow:0 2px 10px rgba(0,0,0,0.6);
 
   z-index:2;
 }
@@ -266,7 +267,6 @@ footer p {
   border-radius:3px;
 }
 
-/* Second Small Line */
 .studio-title::before{
   content:"";
   display:block;
@@ -284,4 +284,14 @@ footer p {
   color:#ccc;
   margin-top:10px;
   letter-spacing:1px;
+}
+
+/* ================= MOBILE VIEW ================= */
+
+@media (max-width:600px){
+
+  .studio-title{
+    display:none;
+  }
+
 }
