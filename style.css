@@ -1,4 +1,4 @@
- /* ================= GLOBAL RESET ================= */
+/* ================= GLOBAL RESET ================= */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -233,7 +233,6 @@ footer p {
   }
 
   .studio-title{
-    font-size:20px;
     left:20px;
     top:20px;
   }
@@ -246,9 +245,9 @@ footer p {
   top:30px;
   left:40px;
 
-  font-size:28px;
-  letter-spacing:2px;
+  font-size:clamp(18px,4vw,32px);  /* RESPONSIVE FONT */
 
+  letter-spacing:2px;
   color:white;
   font-weight:600;
 
