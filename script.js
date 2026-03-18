@@ -82,13 +82,14 @@
   // ==============================
   // CONFIRM BOOKING → GMAIL
   // ==============================
-  confirmBtn.onclick = function () {
+ 
+confirmBtn.onclick = function () {
 
-    const service = servicesData[selectedService];
+  const service = servicesData[selectedService];
 
-    const subject = `Booking Inquiry | DHARMENDRA Studio | ${service.name}`;
+  const subject = `Booking Inquiry | DHARMENDRA Studio | ${service.name}`;
 
-    const body = `Hello DHARMENDRA Studio,
+  const body = `Hello DHARMENDRA Studio,
 
 I am interested in booking the following service:
 
@@ -102,31 +103,13 @@ Please confirm availability and next steps.
 
 Thank you.`;
 
-    const email = "dharmender.9329@gmail.com";
+  const email = "dharmender.9329@gmail.com";
 
-    const gmailURL =
-      `https://mail.google.com/mail/?view=cm&fs=1` +
-      `&to=${email}` +
-      `&su=${encodeURIComponent(subject)}` +
-      `&body=${encodeURIComponent(body)}`;
+  const mailtoLink =
+    `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    window.open(gmailURL, "_blank");
-  };
+  window.location.href = mailtoLink;
 
-  // ==============================
-  // BOOK SESSION BUTTON → SCROLL
-  // ==============================
-  const bookBtn = document.getElementById("bookSessionBtn");
-  const servicesSection = document.getElementById("services");
-
-  if(bookBtn && servicesSection){
-    bookBtn.addEventListener("click", function(){
-
-      servicesSection.scrollIntoView({
-        behavior: "smooth"
-      });
-
-    });
-  }
+};
 
 }); 
