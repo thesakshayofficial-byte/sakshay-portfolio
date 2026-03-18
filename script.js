@@ -1,4 +1,4 @@
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
   // ==============================
   // SERVICE DATA
@@ -54,7 +54,7 @@
       const service = this.getAttribute("data-service");
 
       if (!servicesData[service]) {
-        alert("Service not found in JS data!");
+        alert("Service not found!");
         return;
       }
 
@@ -80,16 +80,15 @@
   };
 
   // ==============================
-  // CONFIRM BOOKING → GMAIL
+  // CONFIRM BOOKING → EMAIL (FIXED FOR MOBILE)
   // ==============================
- 
-confirmBtn.onclick = function () {
+  confirmBtn.onclick = function () {
 
-  const service = servicesData[selectedService];
+    const service = servicesData[selectedService];
 
-  const subject = `Booking Inquiry | DHARMENDRA Studio | ${service.name}`;
+    const subject = `Booking Inquiry | DHARMENDRA Studio | ${service.name}`;
 
-  const body = `Hello DHARMENDRA Studio,
+    const body = `Hello DHARMENDRA Studio,
 
 I am interested in booking the following service:
 
@@ -103,13 +102,32 @@ Please confirm availability and next steps.
 
 Thank you.`;
 
-  const email = "dharmender.9329@gmail.com";
+    const email = "dharmender.9329@gmail.com";
 
-  const mailtoLink =
-    `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink =
+      `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-  window.location.href = mailtoLink;
+    // ✅ Mobile + PC Compatible
+    window.location.href = mailtoLink;
 
-};
+    // Optional: modal close
+    modal.style.display = "none";
+  };
 
-}); 
+  // ==============================
+  // BOOK SESSION BUTTON → SCROLL
+  // ==============================
+  const bookBtn = document.getElementById("bookSessionBtn");
+  const servicesSection = document.getElementById("services");
+
+  if (bookBtn && servicesSection) {
+    bookBtn.addEventListener("click", function () {
+
+      servicesSection.scrollIntoView({
+        behavior: "smooth"
+      });
+
+    });
+  }
+
+});
